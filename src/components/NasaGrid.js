@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import NasaCard from "./NasaCard";
+import { Container, Row, Col } from 'reactstrap';
 import axios from "axios";
 
 export default function NasaGrid() {
@@ -19,7 +20,7 @@ export default function NasaGrid() {
     }, [])
 
     return(
-        <div>
+        <Container>
             <NasaCard 
             key = {nasaData.index}
             image = {nasaData.url}
@@ -28,7 +29,7 @@ export default function NasaGrid() {
             explanation = {nasaData.explanation}
             />
 
-        </div>
+        </Container>
     )
 
 
