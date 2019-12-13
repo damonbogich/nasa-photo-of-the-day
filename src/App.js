@@ -1,6 +1,12 @@
 import React from "react";
 import "./App.css";
 import NasaGrid from "./components/NasaGrid"
+import CardGrid from './StarwarsComponents/CardGrid'
+
+
+
+
+
 
 function App() {
 
@@ -15,5 +21,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
